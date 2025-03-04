@@ -22,15 +22,18 @@ class StorageJson(IStorage):
             json.dump(self.movies, file, indent= 4)
 
     def list_movies(self):
+        """ Returns a dictionary of all movies"""
         return self.movies
 
 
     def add_movie(self, title, year, rating, poster):
+        """ Adds a new movie """
         self.movies[title] = {"year": year, "rating": rating, "poster": poster}
         self._save_data()
 
 
     def delete_movie(self, title):
+        """ Deletes a movie using Title"""
         if title in self.movies:
             del self.movies[title]
             self._save_data()
@@ -40,6 +43,7 @@ class StorageJson(IStorage):
 
 
     def update_movie(self, title, rating):
+        """ updates the rating of the movie"""
         if title in self.movies:
             self.movies[title]["rating"]= rating
             self._save_data()

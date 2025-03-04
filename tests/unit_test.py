@@ -1,4 +1,6 @@
-from storage_json import StorageJson
+from Movie_project_OOP.storage.storage_json import StorageJson
+
+
 
 storage = StorageJson("movies.json")
 
