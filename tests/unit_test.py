@@ -1,13 +1,12 @@
 from Movie_project_OOP.storage.storage_json import StorageJson
 
 
-
 storage = StorageJson("movies.json")
 
-print("Initial movies:", storage.list_movies().strip())
+print("Initial movies:", storage.list_movies())
 
 # Add a movie
-storage.add_movie("The Matrix", 1999, 9.0, "matrix.jpg")
+storage.add_movie("The Matrix", 1999, 8.0)
 print("After adding The Matrix:", storage.list_movies())
 
 # Update movie rating
