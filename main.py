@@ -1,14 +1,16 @@
-
-from storage_json import StorageJson
-from movie_app import MovieApp
+from storage import StorageJson
+from Movie_project_OOP.App.movie_app import MovieApp
+from storage import StorageCsv
 
 
 def main():
     # Step 1: Create a StorageJson object with a file path (adjust the path if needed)
-    storage = StorageJson("movies.json")  # Replace "movies.json" with the path to your JSON file
+    storage = StorageJson('DB/db.json')  # Replace "movies.json" with the path to your JSON file
+    storage2 = StorageCsv('DB/db.csv')
 
-    # Step 2: Create a MovieApp object and pass the StorageJson object
-    app = MovieApp(storage)
+
+
+    app = MovieApp(storage2)
     app.run()
 
 

@@ -1,5 +1,5 @@
 import json
-from istorage import IStorage
+from Movie_project_OOP.storage.istorage import IStorage
 
 
 class StorageJson(IStorage):
@@ -28,7 +28,7 @@ class StorageJson(IStorage):
 
     def add_movie(self, title, year, rating, poster):
         """ Adds a new movie """
-        self.movies[title] = {"year": year, "rating": rating, "poster": poster}
+        self.movies[title] = {"year": year, "rating": rating, "Poster": poster}
         self._save_data()
 
 

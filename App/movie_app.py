@@ -63,7 +63,6 @@ class MovieApp:
     def _delete_movie(self):
         movie_to_be_deleted = input('Enter movie name to delete: ')
         self._storage.delete_movie(movie_to_be_deleted)
-        print(f'Movie {movie_to_be_deleted} successfully deleted')
         input("\nPress Enter to continue ")
 
     def _update_movie(self):
