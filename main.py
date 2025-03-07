@@ -1,5 +1,6 @@
 from storage import StorageJson
-from Movie_project_OOP.App.movie_app import MovieApp
+from App.movie_app import MovieApp
+from MoviesApp_VO3.App.movie_app import  MovieApp
 from storage import StorageCsv
 
 
@@ -10,7 +11,7 @@ def main():
 
 
 
-    app = MovieApp(storage2)
+    app = MovieApp(storage)
     app.run()
 
 

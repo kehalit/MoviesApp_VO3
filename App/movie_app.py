@@ -2,9 +2,11 @@ import random
 import requests
 import os
 from dotenv import load_dotenv
-from Movie_project_OOP.tests.unit_test import storage
-from storage.storage_json import StorageJson
-from storage.istorage import IStorage
+
+from MoviesApp_VO3.storage.storage_json import StorageJson
+from MoviesApp_VO3.storage.storage_csv import StorageCsv
+from MoviesApp_VO3.storage.istorage import IStorage
+
 
 #from class_zwith_Api.test import API_KEY
 load_dotenv()

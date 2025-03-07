@@ -1,5 +1,5 @@
 import json
-from Movie_project_OOP.storage.istorage import IStorage
+from MoviesApp_VO3.storage.istorage import IStorage
 
 
 class StorageJson(IStorage):
