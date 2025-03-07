@@ -53,7 +53,7 @@ class StorageCsv(IStorage):
             del self.movies[title]
             self._save_data(self.movies)
             print(f" '{title}' has been deleted.")
-        gielse:
+        else:
             print(f" '{title}' not found in storage. ")
 
 

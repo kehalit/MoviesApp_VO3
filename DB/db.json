@@ -18,5 +18,20 @@
         "year": 2014,
         "rating": 3.1,
         "Poster": "https://m.media-amazon.com/images/M/MV5BMjI4MjA2OTQxMF5BMl5BanBnXkFtZTgwMjcyMTI2MjE@._V1_SX300.jpg"
+    },
+    "Home": {
+        "year": 2015,
+        "rating": 6.5,
+        "Poster": "https://m.media-amazon.com/images/M/MV5BMjExOTQ4MDMyMV5BMl5BanBnXkFtZTgwMTE3NDM2MzE@._V1_SX300.jpg"
+    },
+    "Titanic": {
+        "year": 1997,
+        "rating": 7.9,
+        "Poster": "https://m.media-amazon.com/images/M/MV5BYzYyN2FiZmUtYWYzMy00MzViLWJkZTMtOGY1ZjgzNWMwN2YxXkEyXkFqcGc@._V1_SX300.jpg"
+    },
+    "Poor Things": {
+        "year": 2023,
+        "rating": 7.8,
+        "Poster": "https://m.media-amazon.com/images/M/MV5BYWU2MjRjZTYtMjVkMS00MTBjLWFiMTAtYmZlYTk1YjkyMWFkXkEyXkFqcGc@._V1_SX300.jpg"
     }
 }
