@@ -11,7 +11,7 @@ def main():
 
 
 
-    app = MovieApp(storage)
+    app = MovieApp(storage2)
     app.run()
 
 
