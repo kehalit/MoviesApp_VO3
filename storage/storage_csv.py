@@ -1,14 +1,13 @@
 import csv
 from os import write
-
 from .istorage import IStorage
+
 
 class StorageCsv(IStorage):
     def __init__(self, file_path):
         """Initializes the storage with a CSV file path."""
         self.file_path = file_path
         self._load_data()
-
 
     def _load_data(self):
         """Loads data from the CSV file into the movies dictionary."""
@@ -20,7 +19,6 @@ class StorageCsv(IStorage):
                     self.movies[row['title']] = {'title': row['title'], 'rating': float(row['rating']), 'year': int(row['year'])}
         except FileNotFoundError:
             self.movies = {}
-
 
     def _save_data(self, movies):
         """Saves the current movies data into the CSV file."""
@@ -35,17 +33,14 @@ class StorageCsv(IStorage):
                     'year': details['year']
                 })
 
-
     def list_movies(self):
         """Returns a dictionary of all movies."""
         return self.movies
-
 
     def add_movie(self, title, year, rating, poster):
         """Adds a new movie to the storage."""
         self.movies[title] = {'year': int(year), 'rating': float(rating), 'Poster': poster}
         self._save_data(self.movies)
-
 
     def delete_movie(self, title):
         """Deletes a movie from the storage."""
@@ -55,7 +50,6 @@ class StorageCsv(IStorage):
             print(f" '{title}' has been deleted.")
         else:
             print(f" '{title}' not found in storage. ")
-
 
     def update_movie(self, title, rating):
         """Updates the rating of an existing movie."""

@@ -90,7 +90,6 @@ class MovieApp:
             for title, details in movies.items():
                 print(f"{title} ({details['year']}) - Rating: {details['rating']}")
 
-
     def _movie_stats(self):
         movies_db = self._storage.list_movies()
         if not movies_db:
@@ -192,7 +191,7 @@ class MovieApp:
             print('9. Generate website')
 
             try:
-                choice = int(input('Enter choice (0-8): ').strip())
+                choice = int(input('Enter choice (0-9): ').strip())
 
                 if choice == 0:
                     print('Bye')
@@ -216,6 +215,6 @@ class MovieApp:
                 elif choice == 9:
                     self._generate_website()
                 else:
-                    print('Invalid choice. Please select between 1 and 8.')
+                    print('Invalid choice. Please select between 1 and 9.')
             except ValueError:
                     print('Invalid input! Please enter a number between 1 and 9.')
