@@ -10,7 +10,7 @@ def main():
     storage2 = StorageCsv('db/db.csv')
 
 
-    app = MovieApp(storage)
+    app = MovieApp(storage2)
     app.run()
 
 
